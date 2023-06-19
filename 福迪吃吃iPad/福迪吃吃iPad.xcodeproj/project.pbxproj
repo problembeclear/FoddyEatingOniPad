@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40414C8F2A404C35005E3D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414C8E2A404C35005E3D95 /* AppDelegate.m */; };
+		40414C922A404C35005E3D95 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414C912A404C35005E3D95 /* SceneDelegate.m */; };
+		40414C952A404C35005E3D95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414C942A404C35005E3D95 /* ViewController.m */; };
+		40414C982A404C35005E3D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40414C962A404C35005E3D95 /* Main.storyboard */; };
+		40414C9A2A404C37005E3D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40414C992A404C37005E3D95 /* Assets.xcassets */; };
+		40414C9D2A404C37005E3D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40414C9B2A404C37005E3D95 /* LaunchScreen.storyboard */; };
+		40414CA02A404C37005E3D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414C9F2A404C37005E3D95 /* main.m */; };
+		40414CAA2A404C37005E3D95 /* ____iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414CA92A404C37005E3D95 /* ____iPadTests.m */; };
+		40414CB42A404C37005E3D95 /* ____iPadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414CB32A404C37005E3D95 /* ____iPadUITests.m */; };
+		40414CB62A404C37005E3D95 /* ____iPadUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414CB52A404C37005E3D95 /* ____iPadUITestsLaunchTests.m */; };
+		40414CC42A405D2F005E3D95 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC32A405D2F005E3D95 /* background.png */; };
+		40414CC62A406279005E3D95 /* Rectangle 87.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC52A406279005E3D95 /* Rectangle 87.png */; };
+		40414CC82A4064E5005E3D95 /* Ellipse 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC72A4064E5005E3D95 /* Ellipse 6.png */; };
+		40414CCA2A40650D005E3D95 /* 金币 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC92A40650D005E3D95 /* 金币 2.png */; };
+		40414CD52A40888E005E3D95 /* Ellipse 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CD42A40888E005E3D95 /* Ellipse 19.png */; };
+		40414CD72A4088CA005E3D95 /* foddy 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CD62A4088CA005E3D95 /* foddy 1.png */; };
+		40414CD92A4088F1005E3D95 /* 装扮 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CD82A4088F1005E3D95 /* 装扮 1.png */; };
+		40414CDB2A408903005E3D95 /* 我的k 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CDA2A408903005E3D95 /* 我的k 1.png */; };
+		A6DEDD1DE720CD18C22F88B0 /* libPods-福迪吃吃iPad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7470F64670A27C50EE2B1945 /* libPods-福迪吃吃iPad.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40414CA62A404C37005E3D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40414C822A404C35005E3D95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40414C892A404C35005E3D95;
+			remoteInfo = "福迪吃吃iPad";
+		};
+		40414CB02A404C37005E3D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40414C822A404C35005E3D95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40414C892A404C35005E3D95;
+			remoteInfo = "福迪吃吃iPad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40414C8A2A404C35005E3D95 /* 福迪吃吃iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "福迪吃吃iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40414C8D2A404C35005E3D95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40414C8E2A404C35005E3D95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40414C902A404C35005E3D95 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		40414C912A404C35005E3D95 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		40414C932A404C35005E3D95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40414C942A404C35005E3D95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40414C972A404C35005E3D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40414C992A404C37005E3D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40414C9C2A404C37005E3D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40414C9E2A404C37005E3D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40414C9F2A404C37005E3D95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40414CA52A404C37005E3D95 /* 福迪吃吃iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "福迪吃吃iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40414CA92A404C37005E3D95 /* ____iPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____iPadTests.m"; sourceTree = "<group>"; };
+		40414CAF2A404C37005E3D95 /* 福迪吃吃iPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "福迪吃吃iPadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40414CB32A404C37005E3D95 /* ____iPadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____iPadUITests.m"; sourceTree = "<group>"; };
+		40414CB52A404C37005E3D95 /* ____iPadUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____iPadUITestsLaunchTests.m"; sourceTree = "<group>"; };
+		40414CC32A405D2F005E3D95 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		40414CC52A406279005E3D95 /* Rectangle 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 87.png"; sourceTree = "<group>"; };
+		40414CC72A4064E5005E3D95 /* Ellipse 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 6.png"; sourceTree = "<group>"; };
+		40414CC92A40650D005E3D95 /* 金币 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "金币 2.png"; sourceTree = "<group>"; };
+		40414CD42A40888E005E3D95 /* Ellipse 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 19.png"; sourceTree = "<group>"; };
+		40414CD62A4088CA005E3D95 /* foddy 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foddy 1.png"; sourceTree = "<group>"; };
+		40414CD82A4088F1005E3D95 /* 装扮 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装扮 1.png"; sourceTree = "<group>"; };
+		40414CDA2A408903005E3D95 /* 我的k 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的k 1.png"; sourceTree = "<group>"; };
+		7375B0BB3B69CD0145EB8EC5 /* Pods-福迪吃吃iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃iPad.debug.xcconfig"; path = "Target Support Files/Pods-福迪吃吃iPad/Pods-福迪吃吃iPad.debug.xcconfig"; sourceTree = "<group>"; };
+		7470F64670A27C50EE2B1945 /* libPods-福迪吃吃iPad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-福迪吃吃iPad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23B193D72A2B2EE61A21B86 /* Pods-福迪吃吃iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃iPad.release.xcconfig"; path = "Target Support Files/Pods-福迪吃吃iPad/Pods-福迪吃吃iPad.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40414C872A404C35005E3D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DEDD1DE720CD18C22F88B0 /* libPods-福迪吃吃iPad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40414CA22A404C37005E3D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40414CAC2A404C37005E3D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A0C199A4CB3E7026AF9E846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7470F64670A27C50EE2B1945 /* libPods-福迪吃吃iPad.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40414C812A404C35005E3D95 = {
+			isa = PBXGroup;
+			children = (
+				40414CC22A405D23005E3D95 /* image */,
+				40414C8C2A404C35005E3D95 /* 福迪吃吃iPad */,
+				40414CA82A404C37005E3D95 /* 福迪吃吃iPadTests */,
+				40414CB22A404C37005E3D95 /* 福迪吃吃iPadUITests */,
+				40414C8B2A404C35005E3D95 /* Products */,
+				FC6DA264CB1D3FE7CA85F818 /* Pods */,
+				2A0C199A4CB3E7026AF9E846 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40414C8B2A404C35005E3D95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40414C8A2A404C35005E3D95 /* 福迪吃吃iPad.app */,
+				40414CA52A404C37005E3D95 /* 福迪吃吃iPadTests.xctest */,
+				40414CAF2A404C37005E3D95 /* 福迪吃吃iPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40414C8C2A404C35005E3D95 /* 福迪吃吃iPad */ = {
+			isa = PBXGroup;
+			children = (
+				40414C8D2A404C35005E3D95 /* AppDelegate.h */,
+				40414C8E2A404C35005E3D95 /* AppDelegate.m */,
+				40414C902A404C35005E3D95 /* SceneDelegate.h */,
+				40414C912A404C35005E3D95 /* SceneDelegate.m */,
+				40414C932A404C35005E3D95 /* ViewController.h */,
+				40414C942A404C35005E3D95 /* ViewController.m */,
+				40414C962A404C35005E3D95 /* Main.storyboard */,
+				40414C992A404C37005E3D95 /* Assets.xcassets */,
+				40414C9B2A404C37005E3D95 /* LaunchScreen.storyboard */,
+				40414C9E2A404C37005E3D95 /* Info.plist */,
+				40414C9F2A404C37005E3D95 /* main.m */,
+			);
+			path = "福迪吃吃iPad";
+			sourceTree = "<group>";
+		};
+		40414CA82A404C37005E3D95 /* 福迪吃吃iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				40414CA92A404C37005E3D95 /* ____iPadTests.m */,
+			);
+			path = "福迪吃吃iPadTests";
+			sourceTree = "<group>";
+		};
+		40414CB22A404C37005E3D95 /* 福迪吃吃iPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40414CB32A404C37005E3D95 /* ____iPadUITests.m */,
+				40414CB52A404C37005E3D95 /* ____iPadUITestsLaunchTests.m */,
+			);
+			path = "福迪吃吃iPadUITests";
+			sourceTree = "<group>";
+		};
+		40414CC22A405D23005E3D95 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				40414CDA2A408903005E3D95 /* 我的k 1.png */,
+				40414CD82A4088F1005E3D95 /* 装扮 1.png */,
+				40414CD62A4088CA005E3D95 /* foddy 1.png */,
+				40414CD42A40888E005E3D95 /* Ellipse 19.png */,
+				40414CC92A40650D005E3D95 /* 金币 2.png */,
+				40414CC72A4064E5005E3D95 /* Ellipse 6.png */,
+				40414CC52A406279005E3D95 /* Rectangle 87.png */,
+				40414CC32A405D2F005E3D95 /* background.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		FC6DA264CB1D3FE7CA85F818 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7375B0BB3B69CD0145EB8EC5 /* Pods-福迪吃吃iPad.debug.xcconfig */,
+				C23B193D72A2B2EE61A21B86 /* Pods-福迪吃吃iPad.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40414C892A404C35005E3D95 /* 福迪吃吃iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40414CB92A404C37005E3D95 /* Build configuration list for PBXNativeTarget "福迪吃吃iPad" */;
+			buildPhases = (
+				49072403D19007C2F9870ABA /* [CP] Check Pods Manifest.lock */,
+				40414C862A404C35005E3D95 /* Sources */,
+				40414C872A404C35005E3D95 /* Frameworks */,
+				40414C882A404C35005E3D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "福迪吃吃iPad";
+			productName = "福迪吃吃iPad";
+			productReference = 40414C8A2A404C35005E3D95 /* 福迪吃吃iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40414CA42A404C37005E3D95 /* 福迪吃吃iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40414CBC2A404C37005E3D95 /* Build configuration list for PBXNativeTarget "福迪吃吃iPadTests" */;
+			buildPhases = (
+				40414CA12A404C37005E3D95 /* Sources */,
+				40414CA22A404C37005E3D95 /* Frameworks */,
+				40414CA32A404C37005E3D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40414CA72A404C37005E3D95 /* PBXTargetDependency */,
+			);
+			name = "福迪吃吃iPadTests";
+			productName = "福迪吃吃iPadTests";
+			productReference = 40414CA52A404C37005E3D95 /* 福迪吃吃iPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40414CAE2A404C37005E3D95 /* 福迪吃吃iPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40414CBF2A404C37005E3D95 /* Build configuration list for PBXNativeTarget "福迪吃吃iPadUITests" */;
+			buildPhases = (
+				40414CAB2A404C37005E3D95 /* Sources */,
+				40414CAC2A404C37005E3D95 /* Frameworks */,
+				40414CAD2A404C37005E3D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40414CB12A404C37005E3D95 /* PBXTargetDependency */,
+			);
+			name = "福迪吃吃iPadUITests";
+			productName = "福迪吃吃iPadUITests";
+			productReference = 40414CAF2A404C37005E3D95 /* 福迪吃吃iPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40414C822A404C35005E3D95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					40414C892A404C35005E3D95 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					40414CA42A404C37005E3D95 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 40414C892A404C35005E3D95;
+					};
+					40414CAE2A404C37005E3D95 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 40414C892A404C35005E3D95;
+					};
+				};
+			};
+			buildConfigurationList = 40414C852A404C35005E3D95 /* Build configuration list for PBXProject "福迪吃吃iPad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40414C812A404C35005E3D95;
+			productRefGroup = 40414C8B2A404C35005E3D95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40414C892A404C35005E3D95 /* 福迪吃吃iPad */,
+				40414CA42A404C37005E3D95 /* 福迪吃吃iPadTests */,
+				40414CAE2A404C37005E3D95 /* 福迪吃吃iPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40414C882A404C35005E3D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40414CC82A4064E5005E3D95 /* Ellipse 6.png in Resources */,
+				40414CCA2A40650D005E3D95 /* 金币 2.png in Resources */,
+				40414CC42A405D2F005E3D95 /* background.png in Resources */,
+				40414CD72A4088CA005E3D95 /* foddy 1.png in Resources */,
+				40414CC62A406279005E3D95 /* Rectangle 87.png in Resources */,
+				40414CD92A4088F1005E3D95 /* 装扮 1.png in Resources */,
+				40414C9D2A404C37005E3D95 /* LaunchScreen.storyboard in Resources */,
+				40414CD52A40888E005E3D95 /* Ellipse 19.png in Resources */,
+				40414CDB2A408903005E3D95 /* 我的k 1.png in Resources */,
+				40414C9A2A404C37005E3D95 /* Assets.xcassets in Resources */,
+				40414C982A404C35005E3D95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40414CA32A404C37005E3D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40414CAD2A404C37005E3D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49072403D19007C2F9870ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-福迪吃吃iPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40414C862A404C35005E3D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40414C952A404C35005E3D95 /* ViewController.m in Sources */,
+				40414C8F2A404C35005E3D95 /* AppDelegate.m in Sources */,
+				40414CA02A404C37005E3D95 /* main.m in Sources */,
+				40414C922A404C35005E3D95 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40414CA12A404C37005E3D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40414CAA2A404C37005E3D95 /* ____iPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40414CAB2A404C37005E3D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40414CB62A404C37005E3D95 /* ____iPadUITestsLaunchTests.m in Sources */,
+				40414CB42A404C37005E3D95 /* ____iPadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40414CA72A404C37005E3D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40414C892A404C35005E3D95 /* 福迪吃吃iPad */;
+			targetProxy = 40414CA62A404C37005E3D95 /* PBXContainerItemProxy */;
+		};
+		40414CB12A404C37005E3D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40414C892A404C35005E3D95 /* 福迪吃吃iPad */;
+			targetProxy = 40414CB02A404C37005E3D95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40414C962A404C35005E3D95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40414C972A404C35005E3D95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40414C9B2A404C37005E3D95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40414C9C2A404C37005E3D95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40414CB72A404C37005E3D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40414CB82A404C37005E3D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40414CBA2A404C37005E3D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7375B0BB3B69CD0145EB8EC5 /* Pods-福迪吃吃iPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "福迪吃吃iPad/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40414CBB2A404C37005E3D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23B193D72A2B2EE61A21B86 /* Pods-福迪吃吃iPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "福迪吃吃iPad/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40414CBD2A404C37005E3D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----iPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/福迪吃吃iPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/福迪吃吃iPad";
+			};
+			name = Debug;
+		};
+		40414CBE2A404C37005E3D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----iPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/福迪吃吃iPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/福迪吃吃iPad";
+			};
+			name = Release;
+		};
+		40414CC02A404C37005E3D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----iPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "福迪吃吃iPad";
+			};
+			name = Debug;
+		};
+		40414CC12A404C37005E3D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----iPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "福迪吃吃iPad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40414C852A404C35005E3D95 /* Build configuration list for PBXProject "福迪吃吃iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40414CB72A404C37005E3D95 /* Debug */,
+				40414CB82A404C37005E3D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40414CB92A404C37005E3D95 /* Build configuration list for PBXNativeTarget "福迪吃吃iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40414CBA2A404C37005E3D95 /* Debug */,
+				40414CBB2A404C37005E3D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40414CBC2A404C37005E3D95 /* Build configuration list for PBXNativeTarget "福迪吃吃iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40414CBD2A404C37005E3D95 /* Debug */,
+				40414CBE2A404C37005E3D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40414CBF2A404C37005E3D95 /* Build configuration list for PBXNativeTarget "福迪吃吃iPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40414CC02A404C37005E3D95 /* Debug */,
+				40414CC12A404C37005E3D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40414C822A404C35005E3D95 /* Project object */;
+}
