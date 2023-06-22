@@ -1,0 +1,31 @@
+//
+//  DressUpViewController.m
+//  福迪吃吃iPad
+//
+//  Created by 张思扬 on 2023/6/21.
+//
+
+#import "DressUpViewController.h"
+
+@interface DressUpViewController ()
+
+@end
+
+@implementation DressUpViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

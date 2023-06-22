@@ -7,12 +7,16 @@
 
 #import "ViewController.h"
 #import "Masonry.h"
+#import "FeedingViewController.h"
+#import "DressUpViewController.h"
+#import "FriendsViewController.h"
 @interface ViewController ()
 @property (nonatomic, strong) UIImageView * headBar;
 @property (nonatomic, strong) UIButton * buttonFeed;
 @property (nonatomic, strong) UIButton *buttonDress;
 @property (nonatomic, strong) UIButton *buttonFriends;
 @property (nonatomic, strong) UIImageView *trueFoddy;
+@property (nonatomic, strong) UILabel *labelTime;
 @end
 
 @implementation ViewController
@@ -90,6 +94,7 @@
         make.width.mas_equalTo(90);
         make.height.mas_equalTo(90);
     }];
+    [_buttonFeed addTarget:self action:@selector(getFeeding) forControlEvents:UIControlEventTouchUpInside];
     [_buttonFeed setImage:[UIImage imageNamed:@"foddy 1.png"] forState:UIControlStateNormal];
     [_buttonFeed setBackgroundImage:[UIImage imageNamed:@"Ellipse 19.png"] forState:UIControlStateNormal];
     UILabel *labelFeed = [[UILabel alloc] init];
@@ -114,6 +119,7 @@
         make.width.mas_equalTo(90);
         make.height.mas_equalTo(90);
     }];
+    [_buttonDress addTarget:self action:@selector(getDressUp) forControlEvents:UIControlEventTouchUpInside];
     [_buttonDress setImage:[UIImage imageNamed:@"装扮 1.png"] forState:UIControlStateNormal];
     [_buttonDress setBackgroundImage:[UIImage imageNamed:@"Ellipse 19.png"] forState:UIControlStateNormal];
     UILabel *labelDress = [[UILabel alloc] init];
@@ -138,6 +144,7 @@
         make.width.mas_equalTo(90);
         make.height.mas_equalTo(90);
     }];
+    [_buttonFriends addTarget:self action:@selector(getFriends) forControlEvents:UIControlEventTouchUpInside];
     [_buttonFriends setImage:[UIImage imageNamed:@"我的k 1.png"] forState:UIControlStateNormal];
     [_buttonFriends setBackgroundImage:[UIImage imageNamed:@"Ellipse 19.png"] forState:UIControlStateNormal];
     UILabel *labelFriends = [[UILabel alloc] init];
@@ -190,6 +197,45 @@
     labelText.font = [UIFont boldSystemFontOfSize:18];
     labelText.textColor = [UIColor blackColor];
     labelText.numberOfLines = 0;
+    //时间
+    NSDate* date = [NSDate date];
+    NSDateFormatter* formatterMonth = [[NSDateFormatter alloc]init];
+    NSDateFormatter* formatterDay = [[NSDateFormatter alloc]init];
+    NSDateFormatter *formatterYear = [[NSDateFormatter alloc] init];
+    [formatterMonth setDateFormat:@"MM"];
+    [formatterDay setDateFormat:@"dd"];
+    [formatterYear setDateFormat:@"yyyy"];
+    NSString* MonthString = [formatterMonth stringFromDate:date];
+    NSString* DayString = [formatterDay stringFromDate:date];
+    NSString *yearString = [formatterYear stringFromDate:date];
+    NSString *timeAll = [NSString stringWithFormat:@"%@/%@/%@", yearString, MonthString, DayString];
+    _labelTime = [[UILabel alloc] init];
+    _labelTime.text = timeAll;
+    [imageViewBiggest addSubview:_labelTime];
+    [_labelTime mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewBiggest).with.offset(-10);
+        make.top.equalTo(imageViewBiggest).with.offset(80);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(50);
+    }];
+    UIImageView *imageSun = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sun1.png"]];
+    [imageViewBiggest addSubview:imageSun];
+    [imageSun mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(_labelTime.mas_left).with.offset(-10);
+        make.bottom.equalTo(_labelTime).with.offset(0);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(60);
+    }];
+    UILabel *timeFor = [[UILabel alloc] init];
+    timeFor.text = @"下午";
+    [imageViewBiggest addSubview:timeFor];
+    [timeFor mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(_labelTime.mas_right).with.offset(-30);
+        make.bottom.equalTo(_labelTime.mas_top).with.offset(10);
+        make.width.mas_equalTo(50);
+        make.height.mas_offset(40);
+    }];
+    
     //白2
     UIImageView *imageViewSmallest = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Rectangle 92.png"]];
     [self.view addSubview:imageViewSmallest];
@@ -218,6 +264,63 @@
         make.height.mas_equalTo(220);
     }];
     
+    
+    UILabel *label1InMiddle = [[UILabel alloc] init];
+    label1InMiddle.text = @"能 量 环";
+    [imageViewMiddle addSubview:label1InMiddle];
+    [label1InMiddle mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(imageViewMiddle).with.offset(30);
+        make.top.equalTo(imageViewMiddle).with.offset(10);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(40);
+    }];
+    label1InMiddle.font = [UIFont boldSystemFontOfSize:20];
+    UILabel *label2InMiddle = [[UILabel alloc] init];
+    label2InMiddle.text = @"主食";
+    [imageViewMiddle addSubview:label2InMiddle];
+    [label2InMiddle mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewMiddle.mas_right).with.offset(-15);
+        make.top.equalTo(imageViewMiddle).with.offset(20);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(30);
+    }];
+    UILabel *label3InMiddle = [[UILabel alloc] init];
+    label3InMiddle.text = @"肉菜菌蛋奶";
+    [imageViewMiddle addSubview:label3InMiddle];
+    [label3InMiddle mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewMiddle.mas_right).with.offset(-15);
+        make.top.equalTo(label2InMiddle).with.offset(30);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(30);
+    }];
+    UILabel *label4InMiddle = [[UILabel alloc] init];
+    label4InMiddle.text = @"零食";
+    [imageViewMiddle addSubview:label4InMiddle];
+    [label4InMiddle mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewMiddle.mas_right).with.offset(-15);
+        make.top.equalTo(label3InMiddle).with.offset(30);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(30);
+    }];
+    UIImageView *imageEnergy = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nenglianghuan.png"]];
+    [imageViewMiddle addSubview:imageEnergy];
+    [imageEnergy mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(imageViewMiddle).with.offset(30);
+        make.top.equalTo(imageViewMiddle).with.offset(60);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(120);
+    }];
+    UIImageView *imageNums = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"colornums.png"]];
+    [imageViewMiddle addSubview:imageNums];
+    [imageNums mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(label2InMiddle.mas_left).with.offset(0);
+        make.top.equalTo(label2InMiddle).with.offset(0);
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(90);
+    }];
+    
+    
+    //右侧福迪
     self.trueFoddy = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"trueFoddy.png"]];
     [self.view addSubview:_trueFoddy];
     [_trueFoddy mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -226,11 +329,20 @@
         make.width.mas_equalTo(350);
         make.height.mas_equalTo(450);
     }];
-    
-    
 }
-
-
-
-
+- (void)getFeeding {
+    FeedingViewController *feedingController = [[FeedingViewController alloc] init];
+    feedingController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self presentViewController:feedingController animated:YES completion:nil];
+}
+- (void)getDressUp {
+    DressUpViewController *dressUpController = [[DressUpViewController alloc] init];
+    dressUpController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:dressUpController animated:YES completion:nil];
+}
+- (void)getFriends {
+    FriendsViewController *friendsController  = [[FriendsViewController alloc] init];
+    friendsController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:friendsController animated:YES completion:nil];
+}
 @end

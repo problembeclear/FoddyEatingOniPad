@@ -17,20 +17,14 @@
 		40414CAA2A404C37005E3D95 /* ____iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414CA92A404C37005E3D95 /* ____iPadTests.m */; };
 		40414CB42A404C37005E3D95 /* ____iPadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414CB32A404C37005E3D95 /* ____iPadUITests.m */; };
 		40414CB62A404C37005E3D95 /* ____iPadUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40414CB52A404C37005E3D95 /* ____iPadUITestsLaunchTests.m */; };
-		40414CC42A405D2F005E3D95 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC32A405D2F005E3D95 /* background.png */; };
-		40414CC62A406279005E3D95 /* Rectangle 87.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC52A406279005E3D95 /* Rectangle 87.png */; };
-		40414CC82A4064E5005E3D95 /* Ellipse 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC72A4064E5005E3D95 /* Ellipse 6.png */; };
-		40414CCA2A40650D005E3D95 /* 金币 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CC92A40650D005E3D95 /* 金币 2.png */; };
-		40414CD52A40888E005E3D95 /* Ellipse 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CD42A40888E005E3D95 /* Ellipse 19.png */; };
-		40414CD72A4088CA005E3D95 /* foddy 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CD62A4088CA005E3D95 /* foddy 1.png */; };
-		40414CD92A4088F1005E3D95 /* 装扮 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CD82A4088F1005E3D95 /* 装扮 1.png */; };
-		40414CDB2A408903005E3D95 /* 我的k 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CDA2A408903005E3D95 /* 我的k 1.png */; };
-		40414CE02A41D027005E3D95 /* Rectangle 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CDF2A41D027005E3D95 /* Rectangle 58.png */; };
-		40414CE22A41D02B005E3D95 /* Rectangle 92.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CE12A41D02B005E3D95 /* Rectangle 92.png */; };
-		40414CE42A41D02E005E3D95 /* Rectangle 88.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CE32A41D02E005E3D95 /* Rectangle 88.png */; };
-		40414CE62A41D501005E3D95 /* foddyState.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CE52A41D501005E3D95 /* foddyState.png */; };
-		40414CE82A41D506005E3D95 /* trueFoddy.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CE72A41D506005E3D95 /* trueFoddy.png */; };
-		40414CEA2A41D757005E3D95 /* Ellipse 50.png in Resources */ = {isa = PBXBuildFile; fileRef = 40414CE92A41D757005E3D95 /* Ellipse 50.png */; };
+		40C786602A42B70100AA447F /* FeedingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7865F2A42B70100AA447F /* FeedingViewController.m */; };
+		40C786632A42B71000AA447F /* DressUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C786622A42B71000AA447F /* DressUpViewController.m */; };
+		40C786662A42B72B00AA447F /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C786652A42B72B00AA447F /* FriendsViewController.m */; };
+		40C786712A44405F00AA447F /* FeedingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C786702A44405F00AA447F /* FeedingView.m */; };
+		40C786742A44407100AA447F /* DressUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C786732A44407100AA447F /* DressUpView.m */; };
+		40C786772A44408600AA447F /* FriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C786762A44408600AA447F /* FriendsView.m */; };
+		40C7868A2A445BC000AA447F /* Rectangle 98.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C786892A445BC000AA447F /* Rectangle 98.png */; };
+		40C7868C2A4464EC00AA447F /* foddyInFeeding.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7868B2A4464EC00AA447F /* foddyInFeeding.png */; };
 		A6DEDD1DE720CD18C22F88B0 /* libPods-福迪吃吃iPad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7470F64670A27C50EE2B1945 /* libPods-福迪吃吃iPad.a */; };
 /* End PBXBuildFile section */
 
@@ -69,20 +63,20 @@
 		40414CAF2A404C37005E3D95 /* 福迪吃吃iPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "福迪吃吃iPadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40414CB32A404C37005E3D95 /* ____iPadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____iPadUITests.m"; sourceTree = "<group>"; };
 		40414CB52A404C37005E3D95 /* ____iPadUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____iPadUITestsLaunchTests.m"; sourceTree = "<group>"; };
-		40414CC32A405D2F005E3D95 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		40414CC52A406279005E3D95 /* Rectangle 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 87.png"; sourceTree = "<group>"; };
-		40414CC72A4064E5005E3D95 /* Ellipse 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 6.png"; sourceTree = "<group>"; };
-		40414CC92A40650D005E3D95 /* 金币 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "金币 2.png"; sourceTree = "<group>"; };
-		40414CD42A40888E005E3D95 /* Ellipse 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 19.png"; sourceTree = "<group>"; };
-		40414CD62A4088CA005E3D95 /* foddy 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foddy 1.png"; sourceTree = "<group>"; };
-		40414CD82A4088F1005E3D95 /* 装扮 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装扮 1.png"; sourceTree = "<group>"; };
-		40414CDA2A408903005E3D95 /* 我的k 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的k 1.png"; sourceTree = "<group>"; };
-		40414CDF2A41D027005E3D95 /* Rectangle 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 58.png"; sourceTree = "<group>"; };
-		40414CE12A41D02B005E3D95 /* Rectangle 92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 92.png"; sourceTree = "<group>"; };
-		40414CE32A41D02E005E3D95 /* Rectangle 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 88.png"; sourceTree = "<group>"; };
-		40414CE52A41D501005E3D95 /* foddyState.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foddyState.png; sourceTree = "<group>"; };
-		40414CE72A41D506005E3D95 /* trueFoddy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trueFoddy.png; sourceTree = "<group>"; };
-		40414CE92A41D757005E3D95 /* Ellipse 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 50.png"; sourceTree = "<group>"; };
+		40C7865E2A42B70100AA447F /* FeedingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedingViewController.h; sourceTree = "<group>"; };
+		40C7865F2A42B70100AA447F /* FeedingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedingViewController.m; sourceTree = "<group>"; };
+		40C786612A42B71000AA447F /* DressUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DressUpViewController.h; sourceTree = "<group>"; };
+		40C786622A42B71000AA447F /* DressUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DressUpViewController.m; sourceTree = "<group>"; };
+		40C786642A42B72B00AA447F /* FriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		40C786652A42B72B00AA447F /* FriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		40C7866F2A44405F00AA447F /* FeedingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedingView.h; sourceTree = "<group>"; };
+		40C786702A44405F00AA447F /* FeedingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedingView.m; sourceTree = "<group>"; };
+		40C786722A44407100AA447F /* DressUpView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DressUpView.h; sourceTree = "<group>"; };
+		40C786732A44407100AA447F /* DressUpView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DressUpView.m; sourceTree = "<group>"; };
+		40C786752A44408600AA447F /* FriendsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsView.h; sourceTree = "<group>"; };
+		40C786762A44408600AA447F /* FriendsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsView.m; sourceTree = "<group>"; };
+		40C786892A445BC000AA447F /* Rectangle 98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 98.png"; sourceTree = "<group>"; };
+		40C7868B2A4464EC00AA447F /* foddyInFeeding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foddyInFeeding.png; sourceTree = "<group>"; };
 		7375B0BB3B69CD0145EB8EC5 /* Pods-福迪吃吃iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃iPad.debug.xcconfig"; path = "Target Support Files/Pods-福迪吃吃iPad/Pods-福迪吃吃iPad.debug.xcconfig"; sourceTree = "<group>"; };
 		7470F64670A27C50EE2B1945 /* libPods-福迪吃吃iPad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-福迪吃吃iPad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23B193D72A2B2EE61A21B86 /* Pods-福迪吃吃iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃iPad.release.xcconfig"; path = "Target Support Files/Pods-福迪吃吃iPad/Pods-福迪吃吃iPad.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +119,7 @@
 		40414C812A404C35005E3D95 = {
 			isa = PBXGroup;
 			children = (
-				40414CC22A405D23005E3D95 /* imageInMain */,
+				40C7867E2A4459D500AA447F /* New Group */,
 				40414C8C2A404C35005E3D95 /* 福迪吃吃iPad */,
 				40414CA82A404C37005E3D95 /* 福迪吃吃iPadTests */,
 				40414CB22A404C37005E3D95 /* 福迪吃吃iPadUITests */,
@@ -154,9 +148,9 @@
 				40414C912A404C35005E3D95 /* SceneDelegate.m */,
 				40414C932A404C35005E3D95 /* ViewController.h */,
 				40414C942A404C35005E3D95 /* ViewController.m */,
-				40414CDE2A41BBB5005E3D95 /* Friends */,
-				40414CDD2A41BBA9005E3D95 /* DressUp */,
 				40414CDC2A41BB96005E3D95 /* Feeding */,
+				40414CDD2A41BBA9005E3D95 /* DressUp */,
+				40414CDE2A41BBB5005E3D95 /* Friends */,
 				40414C962A404C35005E3D95 /* Main.storyboard */,
 				40414C992A404C37005E3D95 /* Assets.xcassets */,
 				40414C9B2A404C37005E3D95 /* LaunchScreen.storyboard */,
@@ -183,30 +177,13 @@
 			path = "福迪吃吃iPadUITests";
 			sourceTree = "<group>";
 		};
-		40414CC22A405D23005E3D95 /* imageInMain */ = {
-			isa = PBXGroup;
-			children = (
-				40414CDA2A408903005E3D95 /* 我的k 1.png */,
-				40414CD82A4088F1005E3D95 /* 装扮 1.png */,
-				40414CD62A4088CA005E3D95 /* foddy 1.png */,
-				40414CD42A40888E005E3D95 /* Ellipse 19.png */,
-				40414CC92A40650D005E3D95 /* 金币 2.png */,
-				40414CC72A4064E5005E3D95 /* Ellipse 6.png */,
-				40414CC52A406279005E3D95 /* Rectangle 87.png */,
-				40414CC32A405D2F005E3D95 /* background.png */,
-				40414CDF2A41D027005E3D95 /* Rectangle 58.png */,
-				40414CE12A41D02B005E3D95 /* Rectangle 92.png */,
-				40414CE32A41D02E005E3D95 /* Rectangle 88.png */,
-				40414CE52A41D501005E3D95 /* foddyState.png */,
-				40414CE72A41D506005E3D95 /* trueFoddy.png */,
-				40414CE92A41D757005E3D95 /* Ellipse 50.png */,
-			);
-			path = imageInMain;
-			sourceTree = "<group>";
-		};
 		40414CDC2A41BB96005E3D95 /* Feeding */ = {
 			isa = PBXGroup;
 			children = (
+				40C7865E2A42B70100AA447F /* FeedingViewController.h */,
+				40C7865F2A42B70100AA447F /* FeedingViewController.m */,
+				40C7866F2A44405F00AA447F /* FeedingView.h */,
+				40C786702A44405F00AA447F /* FeedingView.m */,
 			);
 			path = Feeding;
 			sourceTree = "<group>";
@@ -214,6 +191,10 @@
 		40414CDD2A41BBA9005E3D95 /* DressUp */ = {
 			isa = PBXGroup;
 			children = (
+				40C786612A42B71000AA447F /* DressUpViewController.h */,
+				40C786622A42B71000AA447F /* DressUpViewController.m */,
+				40C786722A44407100AA447F /* DressUpView.h */,
+				40C786732A44407100AA447F /* DressUpView.m */,
 			);
 			path = DressUp;
 			sourceTree = "<group>";
@@ -221,8 +202,21 @@
 		40414CDE2A41BBB5005E3D95 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				40C786642A42B72B00AA447F /* FriendsViewController.h */,
+				40C786652A42B72B00AA447F /* FriendsViewController.m */,
+				40C786752A44408600AA447F /* FriendsView.h */,
+				40C786762A44408600AA447F /* FriendsView.m */,
 			);
 			path = Friends;
+			sourceTree = "<group>";
+		};
+		40C7867E2A4459D500AA447F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				40C7868B2A4464EC00AA447F /* foddyInFeeding.png */,
+				40C786892A445BC000AA447F /* Rectangle 98.png */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FC6DA264CB1D3FE7CA85F818 /* Pods */ = {
@@ -338,23 +332,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40414CE42A41D02E005E3D95 /* Rectangle 88.png in Resources */,
-				40414CC82A4064E5005E3D95 /* Ellipse 6.png in Resources */,
-				40414CCA2A40650D005E3D95 /* 金币 2.png in Resources */,
-				40414CC42A405D2F005E3D95 /* background.png in Resources */,
-				40414CEA2A41D757005E3D95 /* Ellipse 50.png in Resources */,
-				40414CE82A41D506005E3D95 /* trueFoddy.png in Resources */,
-				40414CD72A4088CA005E3D95 /* foddy 1.png in Resources */,
-				40414CC62A406279005E3D95 /* Rectangle 87.png in Resources */,
-				40414CD92A4088F1005E3D95 /* 装扮 1.png in Resources */,
+				40C7868C2A4464EC00AA447F /* foddyInFeeding.png in Resources */,
 				40414C9D2A404C37005E3D95 /* LaunchScreen.storyboard in Resources */,
-				40414CD52A40888E005E3D95 /* Ellipse 19.png in Resources */,
-				40414CDB2A408903005E3D95 /* 我的k 1.png in Resources */,
-				40414CE22A41D02B005E3D95 /* Rectangle 92.png in Resources */,
-				40414CE02A41D027005E3D95 /* Rectangle 58.png in Resources */,
+				40C7868A2A445BC000AA447F /* Rectangle 98.png in Resources */,
 				40414C9A2A404C37005E3D95 /* Assets.xcassets in Resources */,
 				40414C982A404C35005E3D95 /* Main.storyboard in Resources */,
-				40414CE62A41D501005E3D95 /* foddyState.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,9 +387,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				40414C952A404C35005E3D95 /* ViewController.m in Sources */,
+				40C786632A42B71000AA447F /* DressUpViewController.m in Sources */,
+				40C786772A44408600AA447F /* FriendsView.m in Sources */,
+				40C786662A42B72B00AA447F /* FriendsViewController.m in Sources */,
 				40414C8F2A404C35005E3D95 /* AppDelegate.m in Sources */,
+				40C786742A44407100AA447F /* DressUpView.m in Sources */,
 				40414CA02A404C37005E3D95 /* main.m in Sources */,
+				40C786712A44405F00AA447F /* FeedingView.m in Sources */,
 				40414C922A404C35005E3D95 /* SceneDelegate.m in Sources */,
+				40C786602A42B70100AA447F /* FeedingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
