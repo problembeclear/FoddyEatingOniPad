@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImageView *imageViewBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"imageBackground.jpg"]];
+    UIImageView *imageViewBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backImage.jpg"]];
     [self.view addSubview:imageViewBackground];
     [imageViewBackground mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).with.offset(0);

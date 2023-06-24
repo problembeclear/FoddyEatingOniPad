@@ -26,7 +26,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     //背景图
-    UIImageView *imageBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+    UIImageView *imageBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backImage.jpg"]];
     [self.view addSubview:imageBackground];
     [imageBackground mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).with.offset(0);
@@ -341,8 +341,8 @@
     [self presentViewController:dressUpController animated:YES completion:nil];
 }
 - (void)getFriends {
-    FriendsViewController *friendsController  = [[FriendsViewController alloc] init];
-    friendsController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:friendsController animated:YES completion:nil];
+//    FriendsViewController *friendsController  = [[FriendsViewController alloc] init];
+//    friendsController.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:friendsController animated:YES completion:nil];
 }
 @end

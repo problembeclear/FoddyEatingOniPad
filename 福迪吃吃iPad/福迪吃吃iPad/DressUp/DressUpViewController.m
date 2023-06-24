@@ -6,7 +6,8 @@
 //
 
 #import "DressUpViewController.h"
-
+#import "DressUpView.h"
+#import "Masonry.h"
 @interface DressUpViewController ()
 
 @end
@@ -16,16 +17,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIImageView *imageViewBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backImage.jpg"]];
+    [self.view addSubview:imageViewBackground];
+    [imageViewBackground mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).with.offset(0);
+        make.right.equalTo(self.view).with.offset(0);
+        make.top.equalTo(self.view).with.offset(0);
+        make.bottom.equalTo(self.view).with.offset(0);
+    }];
+    
+    DressUpView *dressUpView = [[DressUpView alloc]init];
+    [dressUpView Init];
+    [self.view addSubview:dressUpView];
+    [dressUpView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).with.offset(0);
+        make.right.equalTo(self.view).with.offset(0);
+        make.top.equalTo(self.view).with.offset(0);
+        make.bottom.equalTo(self.view).with.offset(0);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(returnBack) name:@"returnFromDressUp" object:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)returnBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
 
 @end
