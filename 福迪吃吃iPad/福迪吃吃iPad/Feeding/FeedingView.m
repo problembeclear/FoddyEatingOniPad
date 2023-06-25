@@ -16,6 +16,8 @@
 @property (strong, nonatomic) UITextField *numField;
 @property (strong, nonatomic) UIButton *buttonFeed;
 @property (strong, nonatomic) UILabel *labelNoti;
+@property (strong, nonatomic) UIButton *red1;
+@property (strong, nonatomic) UIButton *red2;
 @end
 
 @implementation FeedingView
@@ -62,12 +64,12 @@
         make.width.mas_equalTo(190);
         make.height.mas_equalTo(60);
     }];
-    UIButton *red1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [red1 setBackgroundImage:[UIImage imageNamed:@"Ellipse 27-2.png"] forState:UIControlStateNormal];
-    [red1 setTitle:@"1" forState:UIControlStateNormal];
-    [red1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self addSubview:red1];
-    [red1 mas_makeConstraints:^(MASConstraintMaker *make) {
+    _red1= [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_red1 setBackgroundImage:[UIImage imageNamed:@"Ellipse 27-2.png"] forState:UIControlStateNormal];
+    [_red1 setTitle:@"1" forState:UIControlStateNormal];
+    [_red1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self addSubview:_red1];
+    [_red1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.buttonStaple.mas_right).with.offset(-2);
         make.top.equalTo(self.buttonStaple.mas_top).with.offset(0);
         make.width.mas_equalTo(20);
@@ -89,6 +91,19 @@
         make.width.mas_equalTo(190);
         make.height.mas_equalTo(60);
     }];
+    
+    _red2= [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_red2 setBackgroundImage:[UIImage imageNamed:@"Ellipse 27-2.png"] forState:UIControlStateNormal];
+    [_red2 setTitle:@"5" forState:UIControlStateNormal];
+    [_red2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self addSubview:_red2];
+    [_red2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.buttonMeatToMilk.mas_right).with.offset(-2);
+        make.top.equalTo(self.buttonMeatToMilk.mas_top).with.offset(0);
+        make.width.mas_equalTo(20);
+        make.height.mas_equalTo(20);
+    }];
+    
     
     _buttonSnack = [UIButton buttonWithType:UIButtonTypeCustom];
     [_buttonSnack setBackgroundImage:[UIImage imageNamed:@"Rectangle 71"] forState:UIControlStateSelected];
@@ -345,6 +360,8 @@
 - (void)selectFood:(UIButton*)button {
     if ([button isEqual:_buttonFeed]) {
         self.numField.text = @"0";
+        [self.red1 removeFromSuperview];
+        [self.red2 removeFromSuperview];
     } else {
         button.selected = !button.selected;
     }

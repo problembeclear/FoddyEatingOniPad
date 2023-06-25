@@ -46,6 +46,15 @@
         make.width.mas_greaterThanOrEqualTo(668);
         make.height.mas_equalTo(110);
     }];
+    
+    UIImageView *imageGrade = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"9051687701962_.pic.jpg"]];
+    [self.view addSubview:imageGrade];
+    [imageGrade mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.headBar.mas_right).with.offset(30);
+        make.top.equalTo(self.headBar.mas_top).with.offset(0);
+        make.width.equalTo(@120);
+        make.height.equalTo(@120);
+    }];
     //头部栏内头像
     UIButton *buttonHead = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.headBar addSubview:buttonHead];
@@ -70,7 +79,7 @@
     }];
     labelName.text = @"昵称：小锅同学";
     labelName.textColor = [UIColor colorWithRed:130.0/255 green:202.0/255 blue:63.0/255 alpha:1];
-    labelName.font = [UIFont boldSystemFontOfSize:25];
+    labelName.font = [UIFont fontWithName:@"Verdana-Bold" size:25];
     
     //头部栏内账号
     UILabel *labelAccount = [[UILabel alloc] init];
@@ -83,7 +92,58 @@
     }];
     labelAccount.text = @"账号：5634568";
     labelAccount.textColor = [UIColor blackColor];
-    labelAccount.font = [UIFont boldSystemFontOfSize:25];
+    labelAccount.font = [UIFont fontWithName:@"Verdana-Bold" size:25];
+    
+    UILabel *labelEXP = [[UILabel alloc] init];
+    labelEXP.text = @"健康经验";
+    [self.view addSubview:labelEXP];
+    [labelEXP mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(labelName.mas_right).with.offset(30);
+        make.top.equalTo(labelName.mas_top).with.offset(0);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(50);
+    }];
+    labelEXP.font = [UIFont fontWithName:@"Verdana-Bold" size:25];
+    
+    UIImageView *grayEXP = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Rectangle 90.png"]];
+    [self.view addSubview:grayEXP];
+    [grayEXP mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(labelEXP.mas_right).with.offset(20);
+        make.right.equalTo(self.headBar.mas_right).with.offset(-20);
+        make.top.equalTo(labelEXP.mas_top).with.offset(10);
+        make.height.mas_equalTo(30);
+    }];
+    
+    UIImageView *greenEXP = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Rectangle 91.png"]];
+    [self.view addSubview:greenEXP];
+    [greenEXP mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(labelEXP.mas_right).with.offset(20);
+        make.top.equalTo(labelEXP.mas_top).with.offset(10);
+        make.height.mas_equalTo(30);
+        make.width.mas_equalTo(80);
+    }];
+    
+    UILabel *labelGold = [[UILabel alloc] init];
+    labelGold.text = @"装扮币";
+    [self.view addSubview:labelGold];
+    [labelGold mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(labelName.mas_right).with.offset(30);
+        make.top.equalTo(labelAccount.mas_top).with.offset(0);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(50);
+    }];
+    labelGold.font = [UIFont fontWithName:@"Verdana-Bold" size:25];
+    
+    
+    UIImageView *imageGold = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"金币 2"]];
+    [self.view addSubview:imageGold];
+    [imageGold mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(labelGold.mas_right).with.offset(10);
+        make.top.equalTo(labelAccount.mas_top).with.offset(0);
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(50);
+    }];
+    
     
     //喂养按钮
     _buttonFeed = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -180,7 +240,8 @@
         make.height.mas_equalTo(60);
     }];
     labelHello.text = @"早上好! 亲爱的小锅同学";
-    labelHello.font = [UIFont boldSystemFontOfSize:30];
+//    labelHello.font = [UIFont boldSystemFontOfSize:30];
+    labelHello.font = [UIFont fontWithName:@"Verdana-Bold" size:30];
     labelHello.textColor = [UIColor blackColor];
     UILabel *labelText = [[UILabel alloc] init];
     [imageViewBiggest addSubview:labelText];
@@ -191,10 +252,10 @@
         make.height.mas_equalTo(120);
     }];
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"你听说了吗？福迪小镇的科学家说吃掉蘑菇，蘑菇在我们体内会变成体内细胞的后援军，在我们生病的时候可以提高我们的战斗力呢! "];
-    [attributedString addAttribute:NSKernAttributeName value:@(3.5) range:NSMakeRange(0, [attributedString length])];
+    [attributedString addAttribute:NSKernAttributeName value:@(4.5) range:NSMakeRange(0, [attributedString length])];
     labelText.attributedText = attributedString;
     [labelText sizeToFit];
-    labelText.font = [UIFont boldSystemFontOfSize:18];
+    labelText.font = [UIFont fontWithName:@"Verdana-Bold" size:22];
     labelText.textColor = [UIColor blackColor];
     labelText.numberOfLines = 0;
     //时间
@@ -211,6 +272,7 @@
     NSString *timeAll = [NSString stringWithFormat:@"%@/%@/%@", yearString, MonthString, DayString];
     _labelTime = [[UILabel alloc] init];
     _labelTime.text = timeAll;
+    _labelTime.font = [UIFont fontWithName:@"Verdana-Bold" size:15];
     [imageViewBiggest addSubview:_labelTime];
     [_labelTime mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(imageViewBiggest).with.offset(-10);
@@ -218,7 +280,8 @@
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(50);
     }];
-    UIImageView *imageSun = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sun1.png"]];
+    //天气太阳
+    UIImageView *imageSun = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"太阳 1.png"]];
     [imageViewBiggest addSubview:imageSun];
     [imageSun mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(_labelTime.mas_left).with.offset(-10);
@@ -226,16 +289,17 @@
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
     }];
+    //时刻
     UILabel *timeFor = [[UILabel alloc] init];
     timeFor.text = @"下午";
     [imageViewBiggest addSubview:timeFor];
     [timeFor mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(_labelTime.mas_right).with.offset(-30);
-        make.bottom.equalTo(_labelTime.mas_top).with.offset(10);
+        make.bottom.equalTo(_labelTime.mas_top).with.offset(20);
         make.width.mas_equalTo(50);
         make.height.mas_offset(40);
     }];
-    
+    timeFor.font = [UIFont fontWithName:@"Verdana-Bold" size:18];
     //白2
     UIImageView *imageViewSmallest = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Rectangle 92.png"]];
     [self.view addSubview:imageViewSmallest];
@@ -245,14 +309,22 @@
         make.width.mas_equalTo(180);
         make.height.mas_equalTo(220);
     }];
+    UIImageView *stateIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"8681687697431_.pic.jpg"]];
+    [imageViewSmallest addSubview:stateIcon];
+    [stateIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewSmallest.mas_right).with.offset(-10);
+        make.top.equalTo(imageViewSmallest.mas_top).with.offset(30);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(40);
+    }];
     //状态福迪
     UIImageView *foddyState = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"foddyState.png"]];
     [imageViewSmallest addSubview:foddyState];
     [foddyState mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(foddyState.mas_centerX).multipliedBy(1.0);
-        make.centerY.equalTo(foddyState.mas_centerY).multipliedBy(1.0);
-        make.width.mas_equalTo(170);
-        make.height.mas_equalTo(200);
+        make.centerX.equalTo(imageViewSmallest.mas_centerX).multipliedBy(0.9);
+        make.centerY.equalTo(imageViewSmallest.mas_centerY).multipliedBy(1.0);
+        make.width.mas_equalTo(136);
+        make.height.mas_equalTo(160);
     }];
     //白3
     UIImageView *imageViewMiddle = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Rectangle 88.png"]];
@@ -274,7 +346,8 @@
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(40);
     }];
-    label1InMiddle.font = [UIFont boldSystemFontOfSize:20];
+    label1InMiddle.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+    
     UILabel *label2InMiddle = [[UILabel alloc] init];
     label2InMiddle.text = @"主食";
     [imageViewMiddle addSubview:label2InMiddle];
@@ -284,6 +357,8 @@
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(30);
     }];
+    label2InMiddle.font = [UIFont fontWithName:@"Verdana-Bold" size:17];
+    
     UILabel *label3InMiddle = [[UILabel alloc] init];
     label3InMiddle.text = @"肉菜菌蛋奶";
     [imageViewMiddle addSubview:label3InMiddle];
@@ -293,6 +368,7 @@
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(30);
     }];
+    label3InMiddle.font = [UIFont fontWithName:@"Verdana-Bold" size:17];
     UILabel *label4InMiddle = [[UILabel alloc] init];
     label4InMiddle.text = @"零食";
     [imageViewMiddle addSubview:label4InMiddle];
@@ -302,6 +378,7 @@
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(30);
     }];
+    label4InMiddle.font = [UIFont fontWithName:@"Verdana-Bold" size:17];
     UIImageView *imageEnergy = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nenglianghuan.png"]];
     [imageViewMiddle addSubview:imageEnergy];
     [imageEnergy mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -318,8 +395,31 @@
         make.width.mas_equalTo(50);
         make.height.mas_equalTo(90);
     }];
+    //当前能量
+    UILabel *energyNow = [[UILabel alloc] init];
+    energyNow.text = @"当前能量";
+    [imageViewMiddle addSubview:energyNow];
+    [energyNow mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewMiddle.mas_right).with.offset(-15);
+        make.top.equalTo(label4InMiddle.mas_bottom).with.offset(0);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(30);
+    }];
+    energyNow.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+    energyNow.textAlignment = NSTextAlignmentCenter;
     
-    
+    //当前能量数字
+    UILabel *energyNum = [[UILabel alloc] init];
+    energyNum.text = @"1375";
+    [imageViewMiddle addSubview:energyNum];
+    [energyNum mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(imageViewMiddle.mas_right).with.offset(-15);
+        make.top.equalTo(energyNow.mas_bottom).with.offset(0);
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(60);
+    }];
+    energyNum.font = [UIFont fontWithName:@"Verdana-Bold" size:50];
+    energyNum.textAlignment = NSTextAlignmentCenter;
     //右侧福迪
     self.trueFoddy = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"trueFoddy.png"]];
     [self.view addSubview:_trueFoddy];
