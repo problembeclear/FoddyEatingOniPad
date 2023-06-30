@@ -37,10 +37,20 @@
     }];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(returnBack) name:@"returnFromFeeding" object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(alertForUs) name:@"alertForUs" object:nil];
 }
 
 - (void)returnBack {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+- (void)alertForUs {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"喂食成功" message:@"快看看还有什么要喂给福迪吗" preferredStyle:UIAlertControllerStyleAlert] ;
+    
+    UIAlertAction* act = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil] ;
+    
+    [alert addAction:act] ;
+    [self presentViewController:alert animated:YES completion:nil] ;
+}
 @end

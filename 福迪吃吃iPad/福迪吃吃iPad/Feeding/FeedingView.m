@@ -94,7 +94,7 @@
     
     _red2= [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [_red2 setBackgroundImage:[UIImage imageNamed:@"Ellipse 27-2.png"] forState:UIControlStateNormal];
-    [_red2 setTitle:@"5" forState:UIControlStateNormal];
+    [_red2 setTitle:@"2" forState:UIControlStateNormal];
     [_red2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self addSubview:_red2];
     [_red2 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -178,8 +178,9 @@
         self.buttonStaple.titleLabel.font = [UIFont boldSystemFontOfSize:20];
         self.buttonMeatToMilk.titleLabel.font = [UIFont boldSystemFontOfSize:20];
         self.buttonSnack.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+        
     }
-    
+    self.numField.text = @"0";
 }
 //设置左侧的image
 - (void)setImageFoddy {
@@ -362,6 +363,12 @@
         self.numField.text = @"0";
         [self.red1 removeFromSuperview];
         [self.red2 removeFromSuperview];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"removeRed" object:nil];
+        
+        
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"alertForUs" object:nil];
+        
     } else {
         button.selected = !button.selected;
     }

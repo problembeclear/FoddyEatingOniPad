@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIButton *buttonFriends;
 @property (nonatomic, strong) UIImageView *trueFoddy;
 @property (nonatomic, strong) UILabel *labelTime;
+@property (nonatomic, strong) UIButton *buttonRed;
 @end
 
 @implementation ViewController
@@ -169,6 +170,19 @@
     labelFeed.textColor = [UIColor whiteColor];
     labelFeed.textAlignment = NSTextAlignmentCenter;
     labelFeed.font = [UIFont boldSystemFontOfSize:20];
+    
+    _buttonRed = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_buttonRed setBackgroundImage:[UIImage imageNamed:@"Ellipse 27-2.png"] forState:UIControlStateNormal];
+    [_buttonRed setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.view addSubview:_buttonRed];
+    [_buttonRed mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.buttonFeed.mas_right).with.offset(-2);
+        make.top.equalTo(self.buttonFeed.mas_top).with.offset(0);
+        make.width.mas_equalTo(20);
+        make.height.mas_equalTo(20);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissRed) name:@"removeRed" object:nil];
 
     //装扮按钮
     _buttonDress = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -444,5 +458,9 @@
 //    FriendsViewController *friendsController  = [[FriendsViewController alloc] init];
 //    friendsController.modalPresentationStyle = UIModalPresentationFullScreen;
 //    [self presentViewController:friendsController animated:YES completion:nil];
+}
+
+- (void)dismissRed {
+    [self.buttonRed removeFromSuperview];
 }
 @end
